@@ -1,0 +1,53 @@
+1510668798: calculating router 192.168.1.2 's routing table
+1510668798: sending hello to neighbours from 192.168.1.2
+1510668801: sending hello to neighbours from 192.168.1.2
+1510668803: hear hello from neighbour 192.168.1.3
+1510668803: find neighbour 192.168.1.3 from port 0
+1510668804: calculating router 192.168.1.2 's routing table
+1510668804: adding a route matching 192.168.1.3 to port 0
+1510668804: sending link-state messages from 192.168.1.2
+1510668804: sending hello to neighbours from 192.168.1.2
+1510668806: adding a link between 192.168.1.3 and 192.168.1.2
+1510668806: hear hello from neighbour 192.168.1.3
+1510668806: find neighbour 192.168.1.3 from port 0
+1510668807: sending link-state messages from 192.168.1.2
+1510668807: sending hello to neighbours from 192.168.1.2
+1510668809: adding a link between 192.168.1.3 and 192.168.1.2
+1510668809: hear hello from neighbour 192.168.1.3
+1510668809: find neighbour 192.168.1.3 from port 0
+1510668810: calculating router 192.168.1.2 's routing table
+1510668810: sending link-state messages from 192.168.1.2
+1510668810: sending hello to neighbours from 192.168.1.2
+1510668812: adding a link between 192.168.1.3 and 192.168.1.2
+1510668812: hear hello from neighbour 192.168.1.3
+1510668812: find neighbour 192.168.1.3 from port 0
+1510668813: sending link-state messages from 192.168.1.2
+1510668813: sending hello to neighbours from 192.168.1.2
+1510668815: adding a link between 192.168.1.3 and 192.168.1.2
+1510668815: hear hello from neighbour 192.168.1.3
+1510668815: find neighbour 192.168.1.3 from port 0
+1510668816: calculating router 192.168.1.2 's routing table
+1510668816: sending link-state messages from 192.168.1.2
+1510668816: sending hello to neighbours from 192.168.1.2
+1510668818: adding a link between 192.168.1.3 and 192.168.1.2
+1510668818: hear hello from neighbour 192.168.1.3
+1510668818: find neighbour 192.168.1.3 from port 0
+1510668819: sending link-state messages from 192.168.1.2
+1510668819: sending hello to neighbours from 192.168.1.2
+1510668821: adding a link between 192.168.1.3 and 192.168.1.2
+1510668821: hear hello from neighbour 192.168.1.3
+1510668821: find neighbour 192.168.1.3 from port 0
+1510668822: calculating router 192.168.1.2 's routing table
+1510668822: sending link-state messages from 192.168.1.2
+1510668822: sending hello to neighbours from 192.168.1.2
+1510668825: sending link-state messages from 192.168.1.2
+1510668825: sending hello to neighbours from 192.168.1.2
+1510668828: calculating router 192.168.1.2 's routing table
+1510668828: sending link-state messages from 192.168.1.2
+1510668828: sending hello to neighbours from 192.168.1.2
+1510668830: neighbour 192.168.1.3 from port 0 lost connection
+1510668831: sending hello to neighbours from 192.168.1.2
+1510668834: calculating router 192.168.1.2 's routing table
+1510668834: removing a route from 192.168.1.3 to port 0
+1510668834: sending hello to neighbours from 192.168.1.2
+1510668837: sending hello to neighbours from 192.168.1.2

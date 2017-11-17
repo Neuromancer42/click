@@ -24,3 +24,8 @@ share/click/elementmap.xml
 share/click/pkg-config.mk
 stamp-egroup
 stamp-h
+*.swp
+.idea/
+CMakeLists.txt
+cmake-build-debug/
+compile

@@ -1,0 +1,88 @@
+#!/bin/bash
+
+#  Topoplogy
+#                                                                                                           
+#                                                     --- [veth3] Router [veth4] ----- [veth5] Client
+#                                                    /
+#                                                   /
+#                                           [veth2]
+#      Client [veth0] ----- [veth1] Router
+#                                           [veth6]
+#                                                   \
+#                                                    \
+#                                                     --- [veth7] Router [veth8] ----- [veth9] Client
+#                                                                                                                                       
+#
+
+
+
+echo "Clean any previous network"
+cleanNet ovs-bridge
+
+set -e
+
+echo "Create new network"
+echo "Adding bridge ovs-beidge"
+ovs-vsctl add-br ovs-bridge
+
+ovs-vsctl add-port ovs-bridge veth1 \
+  -- set Interface veth1 type=internal \
+  -- set Interface veth1 mac=\"96:10:16:40:d5:20\"
+ip link set dev veth1 up
+
+ovs-vsctl add-port ovs-bridge veth2 \
+  -- set Interface veth2 type=internal \
+  -- set Interface veth2 mac=\"a2:a2:fa:04:e1:9c\"
+ip link set dev veth2 up
+
+ovs-vsctl add-port ovs-bridge veth3 \
+  -- set Interface veth3 type=internal \
+  -- set Interface veth3 mac=\"72:a6:ee:14:3f:65\"
+ip link set dev veth3 up
+
+ovs-vsctl add-port ovs-bridge veth4 \
+  -- set Interface veth4 type=internal \
+  -- set Interface veth4 mac=\"a6:5a:d6:40:94:35\"
+ip link set dev veth4 up
+
+ovs-vsctl add-port ovs-bridge veth5 \
+  -- set Interface veth5 type=internal \
+  -- set Interface veth5 mac=\"2a:93:0d:23:b5:1e\"
+ip link set dev veth5 up
+
+ovs-vsctl add-port ovs-bridge veth6 \
+  -- set Interface veth6 type=internal \
+  -- set Interface veth6 mac=\"8e:35:b6:f3:54:34\"
+ip link set dev veth6 up
+
+ovs-vsctl add-port ovs-bridge veth7 \
+  -- set Interface veth7 type=internal \
+  -- set Interface veth7 mac=\"da:b6:4d:e7:49:68\"
+ip link set dev veth7 up
+
+ovs-vsctl add-port ovs-bridge veth8 \
+  -- set Interface veth8 type=internal \
+  -- set Interface veth8 mac=\"f2:97:af:c4:11:9b\"
+ip link set dev veth8 up
+
+ovs-vsctl add-port ovs-bridge veth9 \
+  -- set Interface veth9 type=internal \
+  -- set Interface veth9 mac=\"9a:7f:12:a0:f8:b4\"
+ip link set dev veth9 up
+
+ovs-vsctl add-port ovs-bridge veth10 \
+  -- set Interface veth10 type=internal \
+  -- set Interface veth10 mac=\"ae:bb:49:91:50:d5\"
+ip link set dev veth10 up
+
+echo "binding IP..."
+ifconfig veth1 192.168.1.1
+ifconfig veth2 192.168.1.2
+ifconfig veth3 192.168.1.2
+ifconfig veth4 192.168.1.3
+ifconfig veth5 192.168.1.3
+ifconfig veth6 192.168.1.4
+ifconfig veth7 192.168.1.2
+ifconfig veth8 192.168.1.5
+ifconfig veth9 192.168.1.5
+ifconfig veth10 192.168.1.6
